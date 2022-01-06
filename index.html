@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--Lets create some trash-->
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>VOIS</title>
+        <style>
+            * {
+            box-sizing: border-box;
+            }
+
+            body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            }
+
+            /* Style the header */
+            .header {
+            padding: 10px;
+            text-align: center;
+            background: #000000;
+            color: rgb(255, 255, 255);
+            }
+
+            /* Increase the font size of the h1 element */
+            .header h1 {
+            font-size: 100px;
+            }
+
+            /* Style the top navigation bar */
+            .navbar {
+            overflow: hidden;
+            background-color: rgb(255, 255, 255);
+            }
+
+            /* Style the navigation bar links */
+            .navbar a {
+            float: left;
+            display: block;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            }
+
+            /* Right-aligned link */
+            .navbar a.right {
+            float: right;
+            }
+
+            /* Change color on hover */
+            .navbar a:hover {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            }
+
+            /* Column container */
+            .row {  
+            display: flex;
+            flex-wrap: wrap;
+            }
+
+            /* Create two unequal columns that sits next to each other */
+            /* Sidebar/left column */
+            .side {
+            flex: 30%;
+            background-color: #000000;
+            padding: 20px;
+            color: rgb(255, 255, 255);
+            }
+
+            /* Main column */
+            .main {   
+            flex: 70%;
+            background-color: rgb(0, 0, 0);
+            padding: 20px;
+            color: rgb(255, 255, 255);
+            }
+
+            /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 700px) {
+            .row {   
+                flex-direction: column;
+            }
+            }
+
+            /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+            @media screen and (max-width: 400px) {
+            .navbar a {
+                float: none;
+                width:100%;
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>VOIS</h1>
+            </div>
+
+        <div class="navbar">
+            <a href="#">Discord</a>
+            <a href="#">Youtube</a>
+            <a href="#">Facebook</a>
+            <a href="#" class="right">Useless Button</a>
+            </div> 
+        <div class="row">
+            <div class="side">
+                <img src="https://files.fm/u/p8tzrp4pf" alt="ay fck why it not work" width=300 height=300">
+                
+            </div>
+            <div class="main">
+                <h1>About Us:</h1>
+                <p>Welcome to our official website!</p>
+                </br>
+                <p>Even though it is yet awaiting to find good use we advise you to remember, carry and spread our voice in a good spirit, similarly to Covid.</p>
+                <p>Stay tuned for future content and be sure to check regularly for any potential (although improbable) updates.</p>
+                </br>
+                </br>
+                <p>Please git gud, Ceo of Vois</p>
+            </div>
+            </div>
+    </body>
+</html>
